@@ -43,11 +43,15 @@ def get_images_and_labels(data_dir):
     return faces, labels
 
 print("Training face recognizer...")
-faces, labels = get_images_and_labels('dataset')
+# Dataset folder name uses a capital "D" in this repository.  Using the
+# correct path avoids training errors on case‑sensitive filesystems.
+faces, labels = get_images_and_labels('Dataset')
 
 if len(faces) == 0 or len(labels) == 0:
     print("No faces found for training. Ensure images are properly labeled and available.")
 else:
     recognizer.train(faces, np.array(labels))
-    recognizer.save('trainer.yml')
+    # Save the trained model using the same filename that the runtime
+    # scripts expect (``trainingData.yml``)
+    recognizer.save('trainingData.yml')
     print("Training complete.")
