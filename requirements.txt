@@ -5,7 +5,7 @@ keyboard
 mediapipe
 numpy
 openai
-pillow
+Pillow
 playsound
 pyaudio
 pyautogui
@@ -15,8 +15,6 @@ pvporcupine
 pynput
 pywhatkit
 requests
-speechrecognition
-subprocess
-time
-typing
-webbrowser
+SpeechRecognition
+opencv-python
+opencv-python-contrib
