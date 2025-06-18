@@ -6,7 +6,6 @@ mediapipe
 numpy
 openai
 Pillow
-playsound
 pyaudio
 pyautogui
 pyperclip
