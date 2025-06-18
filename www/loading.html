@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Loading</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+    <div class="screen screen-1 active">
+        <img id="arc-reactor" src="arc-reactor.png" class="arc" alt="Arc Reactor">
+    </div>
+    <div class="screen screen-2">
+        <img id="hologram" src="hologram.png" class="hologram" alt="Hologram">
+    </div>
+    <div class="screen screen-3">
+        <img id="helmet" src="helmet.png" alt="J.A.R.V.I.S. helmet">
+        <div class="hud"></div>
+        <h1 class="glow">J.A.R.V.I.S. SYSTEM BOOT SEQUENCE</h1>
+        <div class="modules">
+            <div class="module" data-name="Face Recognition">
+                <div class="percent">0%</div>
+                <svg width="120" height="120">
+                    <circle class="bg" cx="60" cy="60" r="54" stroke-width="12"/>
+                    <circle class="progress" cx="60" cy="60" r="54" stroke-width="12"/>
+                </svg>
+                <p>Face Recognition</p>
+            </div>
+            <div class="module" data-name="Hotword Listener">
+                <div class="percent">0%</div>
+                <svg width="120" height="120">
+                    <circle class="bg" cx="60" cy="60" r="54" stroke-width="12"/>
+                    <circle class="progress" cx="60" cy="60" r="54" stroke-width="12"/>
+                </svg>
+                <p>Hotword Listener</p>
+            </div>
+            <div class="module" data-name="Environmental Scanning">
+                <div class="percent">0%</div>
+                <svg width="120" height="120">
+                    <circle class="bg" cx="60" cy="60" r="54" stroke-width="12"/>
+                    <circle class="progress" cx="60" cy="60" r="54" stroke-width="12"/>
+                </svg>
+                <p>Environmental Scanning</p>
+            </div>
+            <div class="module" data-name="Neural Net Calibration">
+                <div class="percent">0%</div>
+                <svg width="120" height="120">
+                    <circle class="bg" cx="60" cy="60" r="54" stroke-width="12"/>
+                    <circle class="progress" cx="60" cy="60" r="54" stroke-width="12"/>
+                </svg>
+                <p>Neural Net Calibration</p>
+            </div>
+        </div>
+        <div id="log" class="log"></div>
+        <div id="countdown" class="glow"></div>
+        <audio id="beep" src="beep.mp3" preload="auto"></audio>
+    </div>
+    <div class="screen screen-4">
+        <div class="auth">
+            <img src="face-wireframe.png" alt="Face">
+            <p>Authenticating…</p>
+        </div>
+    </div>
+    <div class="screen screen-5">
+        <p class="welcome glow">Hello, Sir. Welcome back.</p>
+    </div>
+    <div class="screen screen-6">
+        <!-- main UI markup here -->
+    </div>
+    <script src="loading.js"></script>
+</body>
+</html>
